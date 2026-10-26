@@ -2,11 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/">
-    <title>Redirecting...</title>
-    <script>window.location.href = "/";</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Frigidaire Appliance Repair NYC</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+        :root {
+            --blue: #0033A0;
+            --red: #c41e3a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--blue) 0%, #001a52 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        header {
+            background: var(--blue);
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        .nav-call-btn {
+            background: var(--red);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 17px;
+            transition: all 0.3s;
+        }
+        .nav-call-btn:hover { background: #a01830; }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .error-content h1 {
+            font-size: 120px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .error-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .error-content p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .home-btn {
+            display: inline-block;
+            background: var(--red);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .home-btn:hover {
+            background: #a01830;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .tagline {
+            margin-top: 40px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        @media (max-width: 600px) {
+            .error-content h1 { font-size: 80px; }
+            .error-content h2 { font-size: 24px; }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="/">homepage</a>...</p>
+    <header>
+        <div class="container">
+            <nav class="nav-wrapper">
+                <a href="/" class="logo-text">FRIGIDAIRE</a>
+                <a href="/" class="nav-call-btn">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <p>The page you're looking for doesn't exist or has been moved. Let us help you find what you need.</p>
+            <a href="/" class="home-btn">Request Service Today</a>
+            <p class="tagline">Same-Day Service • Factory-Trained Technicians • All NYC</p>
+        </div>
+    </main>
 </body>
 </html>
